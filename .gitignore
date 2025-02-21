@@ -1,0 +1,5 @@
+# Ignora la cartella dist
+dist/
+
+# Ignora i file JavaScript compilati
+*.js
