@@ -9,7 +9,7 @@ Questo è un progetto TypeScript strutturato per moduli. Un'anteprima monolitica
 
 ## Come eseguire il progetto
 
-1. **Installa le dipendenze**
+1. **Installa le dipendenze**:
    ```sh
    npm install
    ```
