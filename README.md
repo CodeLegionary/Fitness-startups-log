@@ -3,9 +3,13 @@
 Questo è un progetto TypeScript strutturato per moduli. Un'anteprima monolitica è disponibile su [CodePen](https://codepen.io/CodeLegionary/pen/KwKVoWZ).
 
 ## Requisiti
-
 - [Node.js](https://nodejs.org/) (versione 14 o superiore)
 - [TypeScript](https://www.typescriptlang.org/) (installato globalmente)
+
+Una volta installato Node.js, puoi anche procedere all'installazione di TypeScript dal terminale:
+    ```sh
+    npm install -g typescript
+    ```
 
 ## Come eseguire il progetto
 
