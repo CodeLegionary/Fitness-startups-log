@@ -23,3 +23,26 @@ Questo è un progetto TypeScript strutturato per moduli. Un'anteprima monolitica
    ```sh
    node app.js
    ```
+
+## Configurazione TypeScript
+
+**Raccomandazioni per settare autonomamente tsconfig.json**:
+
+```json
+{
+  "compilerOptions": {
+    "target": "es2016",                          // Imposta la versione del linguaggio JavaScript per il codice emesso
+    "lib": ["es2016", "dom"],                    // Specifica le librerie da includere nel processo di compilazione
+    "module": "commonjs",                        // Specifica il sistema di modulo
+    "moduleResolution": "node10",                // Specifica la risoluzione del modulo
+    "esModuleInterop": true,                     // Abilita il supporto per la compatibilità con i moduli ES6
+    "forceConsistentCasingInFileNames": true,    // Forza il casing coerente dei nomi di file
+    "skipLibCheck": true                         // Salta il controllo delle librerie per migliorare i tempi di compilazione
+  },
+  "exclude": [
+    "node_modules"                               // Escludi la directory node_modules
+  ]
+}
+```
+
+N.B. i node_modules non sono presenti, ma secondo best practices è consigliabile escluderli in caso di modifiche future.
