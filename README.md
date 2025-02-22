@@ -47,7 +47,7 @@ Una volta installato Node.js, puoi anche procedere all'installazione di TypeScri
     "target": "es2016",                          // Imposta la versione del linguaggio JavaScript per il codice emesso
     "lib": ["es2016", "dom"],                    // Specifica le librerie da includere nel processo di compilazione
     "module": "commonjs",                        // Specifica il sistema di modulo
-    "outDir": "./dist",     // Aggiungi questa linea per specificare la cartella di output
+    "outDir": "./dist",                          // Specifica la cartella di output
     "moduleResolution": "node10",                // Specifica la risoluzione del modulo
     "esModuleInterop": true,                     // Abilita il supporto per la compatibilità con i moduli ES6
     "forceConsistentCasingInFileNames": true,    // Forza il casing coerente dei nomi di file
