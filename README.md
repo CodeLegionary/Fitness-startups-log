@@ -1,6 +1,8 @@
 # Readme: Progetto TypeScript
 
 Questo è un progetto TypeScript strutturato per moduli. Un'anteprima monolitica è invece disponibile su [CodePen](https://codepen.io/CodeLegionary/pen/KwKVoWZ).
+Il link riportato è lo stesso della voce 'website' di questa repository, poiché il progetto è di carattere puramente gestionale/amministrativo e non dispone di
+una vera e propria interfaccia grafica al di fuori della console.
 
 ## Requisiti
 
@@ -24,6 +26,12 @@ Una volta installato Node.js, puoi anche procedere all'installazione di TypeScri
    tsc app.ts
    ```
 
+   Nota Bene: Il comando precedente compilerà i files nella stessa cartella dei files sorgente, ignorando la configurazione outDir in tsconfig.json.
+   Se invece si desidera creare i file .js in una cartella dedicata, ad esempio dist, servirà il seguente comando:
+   ```sh
+   tsc
+   ```
+
 3. **Esegui il file compilato con Node.js**:
    ```sh
    node app.js
@@ -39,6 +47,7 @@ Una volta installato Node.js, puoi anche procedere all'installazione di TypeScri
     "target": "es2016",                          // Imposta la versione del linguaggio JavaScript per il codice emesso
     "lib": ["es2016", "dom"],                    // Specifica le librerie da includere nel processo di compilazione
     "module": "commonjs",                        // Specifica il sistema di modulo
+    "outDir": "./dist",     // Aggiungi questa linea per specificare la cartella di output
     "moduleResolution": "node10",                // Specifica la risoluzione del modulo
     "esModuleInterop": true,                     // Abilita il supporto per la compatibilità con i moduli ES6
     "forceConsistentCasingInFileNames": true,    // Forza il casing coerente dei nomi di file
@@ -50,4 +59,4 @@ Una volta installato Node.js, puoi anche procedere all'installazione di TypeScri
 }
 ```
 
-N.B. i node_modules non sono presenti, ma secondo best practices è consigliabile escluderli in caso di modifiche future.
+Nota Bene: Anche se 'node_modules' non è presente, è consigliabile escluderlo secondo le best practices in caso di eventuali modifiche.
