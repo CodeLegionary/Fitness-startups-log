@@ -27,7 +27,7 @@ Una volta installato Node.js, puoi anche procedere all'installazione di TypeScri
    ```
 
    Nota Bene: Il comando precedente compilerà i files nella stessa cartella dei files sorgente, ignorando la configurazione outDir in tsconfig.json.
-   Se invece si desidera creare i file .js in una cartella dedicata, ad esempio dist, servirà il seguente comando:
+   Se invece si desidera creare i files .js in una cartella dedicata, come dist, servirà il seguente comando:
    ```sh
    tsc
    ```
